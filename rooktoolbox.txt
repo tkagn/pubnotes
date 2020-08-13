@@ -6,7 +6,7 @@ oc rsh -n openshift-storage $TOOLS_POD
 
 ceph -s
 
-Option 2:
+Option 2 The Old Way:
 curl -s https://raw.githubusercontent.com/rook/rook/master/cluster/examples/kubernetes/ceph/toolbox.yaml | sed 's/namespace: rook-ceph/namespace: openshift-storage/g'| oc apply -f -
 
 TOOLS_POD=$(oc get pods -n openshift-storage -l app=rook-ceph-tools -o name)
