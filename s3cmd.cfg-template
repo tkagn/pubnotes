@@ -1,0 +1,7 @@
+[default]
+access_key = <access key>
+host_base = <fqdn>:<port>
+host_bucket = %(bucket)s.<fqdn>:<port>
+public_url_use_https = False
+secret_key = <secret>
+use_https = False
